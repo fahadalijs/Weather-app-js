@@ -4,10 +4,13 @@ const card = document.querySelector("#card");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
+    
 
     axios(
-        `http://api.weatherapi.com/v1/current.json?key=b4db485d7c4c485fa6d84351232508&q=${city.value}&aqi=no`
-    )
+        
+            `https://api.weatherapi.com/v1/current.json?key=b4db485d7c4c485fa6d84351232508&q=${city.value}&aqi=no`
+        )
+            
     .then((res) => {
         console.log(res.data);
 
